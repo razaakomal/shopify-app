@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import {
-  MdOutlineCancel,
   MdSettings,
-  MdOutlinePriceChange,
   MdAdd,
   MdOutlineMessage,
 } from "react-icons/md";
 import { FaHome, FaBullhorn } from "react-icons/fa";
-import { CgNotes } from "react-icons/cg";
 import "./sidebar.css";
 import { useStateContext } from "../../contexts/ContextProvider";
 import {
@@ -20,6 +17,9 @@ import {
   SideLogo,
   webhook,
 } from "../../assets/index";
+
+
+
 const SideBar = () => {
   const { activeMenu, setActiveMenu, screenSize } = useStateContext();
   const [isActive, setIsActive] = useState(false);
@@ -67,26 +67,7 @@ const SideBar = () => {
         />
       ),
     },
-    /*  {
-      title: "Pricing",
-      path: "/pricing",
-      mobileView: true,
-      icon: <MdOutlinePriceChange style={{ height: "35px", width: "35px" }} />,
-    },
-    {
-      title: "FAQs",
-      path: "/faq",
-      mobileView: true,
-
-      icon: <CgNotes style={{ height: "30px", width: "30px" }} />,
-    },
-    {
-      title: "User Profile",
-      path: "/userprofile",
-      mobileView: true,
-
-      icon: <img src={profile} alt="profile" style={{ color: "#fff" }} />,
-    }, */
+   
   ];
 
   return (

@@ -4,11 +4,9 @@ import {
   MdOutlineKeyboardArrowDown,
   MdOutlinePriceChange,
 } from "react-icons/md";
-import { GrDocumentText } from "react-icons/gr";
 import { CgNotes } from "react-icons/cg";
 import "./header.css";
-// Avatar,price,faq
-import { UserProfile, Pricing, FAQ } from "../index";
+
 import { useStateContext } from "../../contexts/ContextProvider";
 import { profile, SideLogo } from "../../assets/index";
 
@@ -104,9 +102,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* {isClicked.Faq && <FAQ />}
-        {isClicked.UserProfile && <UserProfile />}
-        {isClicked.Price && <Pricing />} */}
+      
       </div>
     </div>
   );

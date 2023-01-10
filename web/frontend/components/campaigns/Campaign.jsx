@@ -1,5 +1,4 @@
 import SummaryCard from "../ui/SummaryCard";
-import "./Campaigns.css";
 import { Marketing, subscriber, Sale, arrow } from "../../assets/index";
 import CampaignBlock from "./CampaignBlock";
 import Pagination from "../ui/Pagination";
@@ -17,8 +16,8 @@ export default function CampaignsComponent(props) {
   const [getCampaigns, setCampaigns] = useState([
     {
       id: 1,
-      product_name: "xyz",
-      campaign_name: "abc",
+      product_name: "Product 1",
+      campaign_name: "Campaign 1",
       product_link: "https://google.com",
       created_at: "2022-11-12",
       start_date: "December 12th, 2022",
@@ -27,7 +26,7 @@ export default function CampaignsComponent(props) {
     {
       id: 2,
       product_name: "Haier dry-Cleaner",
-      campaign_name: "campaign234",
+      campaign_name: "Campaign 2",
       product_link: "https://google.com",
       created_at: "2022-11-12",
       start_date: "December 12th, 2022",
